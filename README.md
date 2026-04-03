@@ -1,41 +1,30 @@
 # Division by Zero
 
-The **Division by Zero** interactive helps students explore what happens when a number is divided by zero. Through visual and numerical examples, students gain an understanding of why division by zero is undefined.
+React SPA exploring limits / undefined behavior for division by zero, with charts (`recharts`) and UI icons (`lucide-react`). Vite + Tailwind.
 
----
+**Live:** https://content-interactives.github.io/zero_division/
 
-## 🔗 Live Interactive
+**Curriculum and standards:** [Standards.md](Standards.md)
 
-Try it out here:  
-👉 [https://content-interactives.github.io/zero_division](https://content-interactives.github.io/zero_division)
+## Stack
 
----
+- React 19, Vite 6, JavaScript (JSX)
+- Tailwind CSS 3, `recharts`, `lucide-react`
 
-## 🌐 Where This Interactive Is Being Used
+## Scripts
 
-This interactive is currently featured in the following locations:
+| Command | Purpose |
+|--------|---------|
+| `npm run dev` | Dev server |
+| `npm run build` | Build → `dist/` |
+| `npm run preview` | Preview `dist/` |
+| `npm run lint` | ESLint |
+| `npm run deploy` | Build + `gh-pages -d dist` |
 
-- <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/5d12571f-8e12-4441-98ab-c0bc94069a96" /> **CK-12 Intent Response**  
-  - 👉 PRODUCTION: PENDING  
-  - 👉 MASTER: PENDING  
-- 📘 **CK-12 Flexbooks**
-  - 👉 PENDING
+## Configuration
 
----
+`vite.config.js`: `base: '/zero_division/'`.
 
-## 📚 Standards & Subjects
+## Layout
 
-This interactive aligns with the following topics and standards:
-
-- **📂 Subject Area**: Middle School Math  
-- **🧮 Topic**: Division & Number Properties  
-- **📏 Common Core**:  
-  - 6.NS.A.1 – Interpret and compute quotients of fractions, and solve word problems involving division  
-  - 7.NS.A.2 – Apply properties of operations as strategies to divide rational numbers
-
----
-
-## 🛠️ Developer Notes
-
-- Built with: React, HTML, CSS, JavaScript  
-- Deployed via GitHub Pages
+`src/main.jsx` entry; components under `src/`.
